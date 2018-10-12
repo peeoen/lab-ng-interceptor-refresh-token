@@ -1,0 +1,9 @@
+<input type="text" placeholder="username" [(ngModel)]="username">
+<input type="text" placeholder="password" [(ngModel)]="password">
+
+<div>
+    <button (click)="login()">Login</button>
+    <button (click)="logout()">Logout</button>
+</div>
+
+<span *ngIf="showError">{{showMessageError}}</span>
